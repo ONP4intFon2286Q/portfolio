@@ -1,251 +1,333 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
 
-  <!-- CSS -->
-  <link rel="stylesheet" href="style.css">
-  
-  <!-- Google fonts -->
-  <link rel="preconnect" href="https://fonts.gstatic.com">
-  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Yellowtail&display=swap" rel="stylesheet">
-  
-  <!-- Font awesome -->
-  <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"> -->
-  <script src="https://kit.fontawesome.com/8d3a69089a.js" crossorigin="anonymous"></script>
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css" />
 
+    <!-- Google fonts -->
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Yellowtail&display=swap"
+      rel="stylesheet"
+    />
 
-  <!-- Gallery Fancybox. -->
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.css" />
-  <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css" /> -->
+    <!-- Font awesome -->
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"> -->
+    <script
+      src="https://kit.fontawesome.com/8d3a69089a.js"
+      crossorigin="anonymous"
+    ></script>
 
-  <title>Portfolio</title>
-</head>
-<body>
+    <!-- Gallery Fancybox. -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.css"
+    />
 
-  <header id="welcome">
-    
-    <div class="wel">Welcome</div>
-    
-    <a class="arlink" href="#about">
-      <div class="arr-box">
-        <div class="arrow-a"></div>
-        <div class="arrow-b"></div>
+    <title>Portfolio</title>
+  </head>
+  <body>
+    <header id="welcome">
+      <div class="wel">Welcome</div>
+
+      <a class="arlink" href="#about">
+        <div class="arr-box">
+          <div class="arrow-a"></div>
+          <div class="arrow-b"></div>
+        </div>
+      </a>
+
+      <canvas id="starCan"></canvas>
+    </header>
+
+    <nav>
+      <div class="navWidth">
+        <div class="small-menu">
+          <div class="logo">
+            <a href="#welcome"><h3>Portfolio</h3></a>
+          </div>
+          <div class="ham-con">
+            <div class="a"></div>
+            <div class="b"></div>
+            <div class="c"></div>
+          </div>
+        </div>
+        <ul class="nav-ul">
+          <li class="nav-li"><a href="#about">about</a></li>
+          <li class="nav-li"><a href="#skills">skills</a></li>
+          <li class="nav-li"><a href="#gallery">gallery</a></li>
+          <li class="nav-li"><a href="#letterMain">letter</a></li>
+        </ul>
       </div>
-    </a>
-    
-    <canvas id="starCan"></canvas>
-    
-    <script src="canvasStars.js"></script>
-  </header>
+    </nav>
 
-  <nav>
+    <div id="about">
+      <div class="about-img"></div>
 
-    <div class="small-menu">
+      <div class="about-txt">
+        <h2>about</h2>
 
-      <div class="logo">
-        <a href="#welcome"><h3>Portfolio</h3></a>
+        <div class="underLines"></div>
+
+        <p>
+          This website was built with HTML, CSS, JavaScript, jQuery and HTML
+          Canvas. Except the gallery, bootstrap and other external template
+          libraries were deliberately left out to showcase a custom design.
+          <br /><br />
+          This website is optimized for mobile and tablets.
+        </p>
       </div>
-  
-      <div class="ham-con">
-        <div class="a"></div>
-        <div class="b"></div>
-        <div class="c"></div>
-      </div>
-
     </div>
-        
-    <ul class="nav-ul">
-      <li class="nav-li"><a href="#about">about</a></li>
-      <li class="nav-li"><a href="#skills">skills</a></li>
-      <li class="nav-li"><a href="#gallery">gallery</a></li>
-      <li class="nav-li"><a href="#letterMain">letter</a></li>
-    </ul>
-    
-  </nav>
 
-  <div id="about">
-    <div class="about-img"></div>
-
-    <div class="about-txt">
-      <h2>about</h2>
+    <div id="skills">
+      <h2>skills</h2>
 
       <div class="underLines"></div>
 
-      <p>
-        This website was built with HTML, CSS, JavaScript, jQuery and HTML Canvas. Bootstrap and other external template libraries were deliberately left out to showcase a custom design.
-        <br><br>
-        This website is optimized for mobile and tablets. The navigation bar works with and without Javascript.
-      </p>
-    </div>
-  </div>
-
-  <div id="skills">
-    <h2>skills</h2>
-
-    <div class="underLines"></div>
-
-    <div class="soft-con">
-      <div class="lang"><i class="fab fa-brands fa-html5 fa-3x"></i><span></span><p>HTML</p></div>
-      <div class="lang"><i class="fab fa-brands fa-css3-alt fa-3x"></i><span></span><p>CSS</p></div>
-      <div class="lang"><i class="fab fa-js fa-3x"></i><span></span><p>JavaScript</p></div>
-      <div class="lang"><i class="fab fa-react fa-3x"></i><span></span><p>React.js</p></div>
-      <div class="lang"><i class="fab fa-python fa-3x"></i><span></span><p>Python</p></div>
-      <!-- <div class="lang"><i class="fab fa-php fa-3x"></i><span></span><p>PHP</p></div> -->
-    </div>
-  </div>
-
-  <div id="gallery">
-    <h2>gallery</h2>
-    <div class="underLines"></div>
-
-    <div class="filterCon">
-      <div class="filterBtn allBtn selected" >all</div>
-      <div class="filterBtn ladiesBtn" >ladies</div>
-      <div class="filterBtn gentsBtn" >gents</div>
-      <div class="filterBtn placesBtn" >places</div>
-    </div>
-
-    <div class="galleryCon">
-
-      <a class="imageCon all ladies " href="https://tinyurl.com/y7tsehht" data-fancybox="gallery">
-        <div class="fas fa-expand fa-3x"></div>
-        <img class="thumb" src="https://tinyurl.com/y7tsehht" />
-      </a>
-
-      <a class="imageCon all gents " href="https://rb.gy/ikmflf" data-fancybox="gallery">
-        <div class="fas fa-expand fa-3x"></div>
-        <img class="thumb" src="https://rb.gy/ikmflf" />
-      </a>
-
-      <a class="imageCon all places " href="https://rb.gy/8gks50" data-fancybox="gallery">
-        <div class="fas fa-expand fa-3x"></div>
-        <img class="thumb" src="https://rb.gy/8gks50" />
-      </a>
-
-      <a class="imageCon all ladies " href="https://rb.gy/lwqvtc" data-fancybox="gallery">
-        <div class="fas fa-expand fa-3x"></div>
-        <img class="thumb" src="https://rb.gy/lwqvtc" />
-      </a>
-
-      <a class="imageCon all gents " href="https://rb.gy/xppuut" data-fancybox="gallery">
-        <div class="fas fa-expand fa-3x"></div>
-        <img class="thumb" src="https://rb.gy/xppuut" />
-      </a>
-
-      <a class="imageCon all places " href="https://rb.gy/gmmska" data-fancybox="gallery">
-        <div class="fas fa-expand fa-3x"></div>
-        <img class="thumb" src="https://rb.gy/gmmska" />
-      </a>
-
-      <a class="imageCon all ladies " href="https://rb.gy/3ynwk4" data-fancybox="gallery">
-        <div class="fas fa-expand fa-3x"></div>
-        <img class="thumb" src="https://rb.gy/3ynwk4" />
-      </a>
-
-      <a class="imageCon all gents " href="https://rb.gy/7vr6nb" data-fancybox="gallery">
-        <div class="fas fa-expand fa-3x"></div>
-        <img class="thumb" src="https://rb.gy/7vr6nb" />
-      </a>
-
-      <a class="imageCon all places " href="https://rb.gy/3mgozm" data-fancybox="gallery">
-        <div class="fas fa-expand fa-3x"></div>
-        <img class="thumb" src="https://rb.gy/3mgozm" />
-      </a>
-
-      <a class="imageCon all ladies " href="https://tinyurl.com/3um4rvv6" data-fancybox="gallery">
-        <div class="fas fa-expand fa-3x"></div>
-        <img class="thumb" src="https://tinyurl.com/3um4rvv6" />
-      </a>
-
-      <a class="imageCon all gents " href="https://tinyurl.com/3fy9fnt8" data-fancybox="gallery">
-        <div class="fas fa-expand fa-3x"></div>
-        <img class="thumb" src="https://tinyurl.com/3fy9fnt8" />
-      </a>
-
-      <a class="imageCon all places " href="https://tinyurl.com/3nzed5th" data-fancybox="gallery">
-        <div class="fas fa-expand fa-3x"></div>
-        <img class="thumb" src="https://tinyurl.com/3nzed5th" />
-      </a>
-
-      <a class="imageCon all ladies " href="https://tinyurl.com/ymr95wzz" data-fancybox="gallery">
-        <div class="fas fa-expand fa-3x"></div>
-        <img class="thumb" src="https://tinyurl.com/ymr95wzz" />
-      </a>
-
-      <a class="imageCon all gents " href="https://tinyurl.com/y4aczcjs" data-fancybox="gallery">
-        <div class="fas fa-expand fa-3x"></div>
-        <img class="thumb" src="https://tinyurl.com/y4aczcjs" />
-      </a>
-
-      <a class="imageCon all places " href="https://tinyurl.com/z2e3e3cx" data-fancybox="gallery">
-        <div class="fas fa-expand fa-3x"></div>
-        <img class="thumb" src="https://tinyurl.com/z2e3e3cx" />
-      </a>
-
-    </div>
-  </div>
-
-  <div id="letterMain">
-
-    <h2>press a key</h2>
-
-    <div class="underLines"></div>
-    
-    <div id="canvasContainer">
-      <canvas id="myCanvas" ></canvas>
-    </div>
-
-    <div class="buttonCon">
-      <button id="partButton">
-        <div id="butCirc"></div>
-        <div id="butSquare"></div>
-      </button>
-
-      <div id="rangeCon">
-        <div id="rangeIcons">
-          <p id="smA">a</p>
-          <p id="lgA">a</p>
+      <div class="soft-con">
+        <div class="lang">
+          <i class="fab fa-brands fa-html5 fa-3x"></i><span></span>
+          <p>HTML</p>
         </div>
-        <input type="range" id="sizeSlider" step=".1" min=".3" max="1.7" value="1">
+        <div class="lang">
+          <i class="fab fa-brands fa-css3-alt fa-3x"></i><span></span>
+          <p>CSS</p>
+        </div>
+        <div class="lang">
+          <i class="fab fa-js fa-3x"></i><span></span>
+          <p>JavaScript</p>
+        </div>
+        <div class="lang">
+          <i class="fab fa-react fa-3x"></i><span></span>
+          <p>React.js</p>
+        </div>
+        <div class="lang">
+          <i class="fab fa-python fa-3x"></i><span></span>
+          <p>Python</p>
+        </div>
+        <!-- <div class="lang"><i class="fab fa-php fa-3x"></i><span></span><p>PHP</p></div> -->
       </div>
     </div>
 
-  </div>
-  
-  <div class="quoteCon">
-    <p class="quoteTxt">"Everyone's a web developer until they actually try to do it."</p>
-    <p class="author">- Tim Berners-Lee</p>
-  </div>
-  
-  <section class="wave-box">
-    <svg version="1.1" xmlns="http://www.w3.org/2000/svg"><path id="wave" d=""/></svg>
-  </section>
-  
-  <footer class="copy">
-    <!-- Javascript copyright -->
-  </footer>
+    <div id="gallery">
+      <h2>gallery</h2>
+      <div class="underLines"></div>
 
-  <!-- Canvas Sketch -->
-  <script src="canvasLetter.js" defer ></script>
+      <div class="filterCon">
+        <div class="filterBtn allBtn selected">all</div>
+        <div class="filterBtn ladiesBtn">ladies</div>
+        <div class="filterBtn gentsBtn">gents</div>
+        <div class="filterBtn placesBtn">places</div>
+      </div>
 
-  <!-- jQuery 1st -->
-  <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.min.js"></script>
+      <div class="galleryCon">
+        <a
+          class="imageCon all ladies"
+          href="https://tinyurl.com/y7tsehht"
+          data-fancybox="gallery"
+        >
+          <div class="fas fa-expand fa-3x"></div>
+          <img class="thumb" src="https://tinyurl.com/y7tsehht" />
+        </a>
 
-  <!-- Gallery Isotope & Fancybox 2nd -->
-  <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.umd.js"></script>
+        <a
+          class="imageCon all gents"
+          href="https://rb.gy/ikmflf"
+          data-fancybox="gallery"
+        >
+          <div class="fas fa-expand fa-3x"></div>
+          <img class="thumb" src="https://rb.gy/ikmflf" />
+        </a>
 
-  <!-- <script type="text/javascript" src="https://unpkg.com/isotope-layout@3.0.6/dist/isotope.pkgd.min.js"></script>
-  <script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script> -->
+        <a
+          class="imageCon all places"
+          href="https://rb.gy/8gks50"
+          data-fancybox="gallery"
+        >
+          <div class="fas fa-expand fa-3x"></div>
+          <img class="thumb" src="https://rb.gy/8gks50" />
+        </a>
 
-  <!-- Wavify 3rd -->
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.0.1/TweenMax.min.js"></script>
-  <script src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/85188/jquery.wavify.js"></script>
+        <a
+          class="imageCon all ladies"
+          href="https://rb.gy/lwqvtc"
+          data-fancybox="gallery"
+        >
+          <div class="fas fa-expand fa-3x"></div>
+          <img class="thumb" src="https://rb.gy/lwqvtc" />
+        </a>
 
-  <!-- JavaScript 5th -->
-  <script type="text/javascript" src="script.js"></script>
+        <a
+          class="imageCon all gents"
+          href="https://rb.gy/xppuut"
+          data-fancybox="gallery"
+        >
+          <div class="fas fa-expand fa-3x"></div>
+          <img class="thumb" src="https://rb.gy/xppuut" />
+        </a>
 
-</body>
+        <a
+          class="imageCon all places"
+          href="https://rb.gy/gmmska"
+          data-fancybox="gallery"
+        >
+          <div class="fas fa-expand fa-3x"></div>
+          <img class="thumb" src="https://rb.gy/gmmska" />
+        </a>
+
+        <a
+          class="imageCon all ladies"
+          href="https://rb.gy/3ynwk4"
+          data-fancybox="gallery"
+        >
+          <div class="fas fa-expand fa-3x"></div>
+          <img class="thumb" src="https://rb.gy/3ynwk4" />
+        </a>
+
+        <a
+          class="imageCon all gents"
+          href="https://rb.gy/7vr6nb"
+          data-fancybox="gallery"
+        >
+          <div class="fas fa-expand fa-3x"></div>
+          <img class="thumb" src="https://rb.gy/7vr6nb" />
+        </a>
+
+        <a
+          class="imageCon all places"
+          href="https://rb.gy/3mgozm"
+          data-fancybox="gallery"
+        >
+          <div class="fas fa-expand fa-3x"></div>
+          <img class="thumb" src="https://rb.gy/3mgozm" />
+        </a>
+
+        <a
+          class="imageCon all ladies"
+          href="https://tinyurl.com/3um4rvv6"
+          data-fancybox="gallery"
+        >
+          <div class="fas fa-expand fa-3x"></div>
+          <img class="thumb" src="https://tinyurl.com/3um4rvv6" />
+        </a>
+
+        <a
+          class="imageCon all gents"
+          href="https://tinyurl.com/3fy9fnt8"
+          data-fancybox="gallery"
+        >
+          <div class="fas fa-expand fa-3x"></div>
+          <img class="thumb" src="https://tinyurl.com/3fy9fnt8" />
+        </a>
+
+        <a
+          class="imageCon all places"
+          href="https://tinyurl.com/3nzed5th"
+          data-fancybox="gallery"
+        >
+          <div class="fas fa-expand fa-3x"></div>
+          <img class="thumb" src="https://tinyurl.com/3nzed5th" />
+        </a>
+
+        <a
+          class="imageCon all ladies"
+          href="https://tinyurl.com/ymr95wzz"
+          data-fancybox="gallery"
+        >
+          <div class="fas fa-expand fa-3x"></div>
+          <img class="thumb" src="https://tinyurl.com/ymr95wzz" />
+        </a>
+
+        <a
+          class="imageCon all gents"
+          href="https://tinyurl.com/y4aczcjs"
+          data-fancybox="gallery"
+        >
+          <div class="fas fa-expand fa-3x"></div>
+          <img class="thumb" src="https://tinyurl.com/y4aczcjs" />
+        </a>
+
+        <a
+          class="imageCon all places"
+          href="https://tinyurl.com/z2e3e3cx"
+          data-fancybox="gallery"
+        >
+          <div class="fas fa-expand fa-3x"></div>
+          <img class="thumb" src="https://tinyurl.com/z2e3e3cx" />
+        </a>
+      </div>
+    </div>
+
+    <div id="letterMain">
+      <h2>press a key</h2>
+
+      <div class="underLines"></div>
+
+      <div id="canvasContainer">
+        <canvas id="myCanvas"></canvas>
+      </div>
+
+      <div class="buttonCon">
+        <button id="partButton">
+          <div id="butCirc"></div>
+          <div id="butSquare"></div>
+        </button>
+
+        <div id="rangeCon">
+          <div id="rangeIcons">
+            <p id="smA">a</p>
+            <p id="lgA">a</p>
+          </div>
+          <input
+            type="range"
+            id="sizeSlider"
+            step=".1"
+            min=".3"
+            max="1.7"
+            value="1"
+          />
+        </div>
+      </div>
+    </div>
+
+    <div class="quoteCon">
+      <p class="quoteTxt">
+        "Everyone's a web developer until they actually try to do it."
+      </p>
+      <p class="author">- Tim Berners-Lee</p>
+    </div>
+
+    <section class="wave-box">
+      <svg version="1.1" xmlns="http://www.w3.org/2000/svg">
+        <path id="wave" d="" />
+      </svg>
+    </section>
+
+    <footer class="copy">
+      <!-- Javascript copyright -->
+    </footer>
+
+    <!-- jQuery -->
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.min.js"></script>
+
+    <!-- Gallery Isotope & Fancybox -->
+    <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.umd.js"></script>
+
+    <!-- Wavify -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.0.1/TweenMax.min.js"></script>
+    <script src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/85188/jquery.wavify.js"></script>
+
+    <!-- JavaScript -->
+    <script src="scripts/canvasCircles.js"></script>
+    <script src="scripts/canvasLetter.js"></script>
+    <script type="text/javascript" src="scripts/welcome.js"></script>
+    <script type="text/javascript" src="scripts/navbar.js"></script>
+    <script type="text/javascript" src="scripts/about.js"></script>
+    <script type="text/javascript" src="scripts/imageGallery.js"></script>
+    <script type="text/javascript" src="scripts/quoteFooter.js"></script>
+  </body>
 </html>

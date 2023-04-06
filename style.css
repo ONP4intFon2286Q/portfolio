@@ -12,24 +12,24 @@
   --main-white: white;
   --main-rollOver: #044ace;
   --main-blue: #187cff;
-  --main-yellow: #F0BD4D;
-  --main-offwhite: #F0F0F0;
+  --main-yellow: #f0bd4d;
+  --main-offwhite: #f0f0f0;
   --pad-top-bot: 80px;
-  --anim-slides: cubic-bezier(.36,.11,.2,1);
+  --anim-slides: cubic-bezier(0.36, 0.11, 0.2, 1);
   --card-dura: 300ms;
   --gen-anim-speed: 100ms;
-  --fontmain: 'Roboto', sans-serif;
+  --fontmain: "Roboto", sans-serif;
+  --maxWidth: 1440px;
 }
 
 .underLines {
   width: 90px;
   height: 2px;
-  background-color: rgba(0, 0, 0, .1);
+  background-color: rgba(0, 0, 0, 0.1);
   display: block;
   border-radius: 1px;
   margin: 0 0 1rem 0;
 }
-
 
 /* ---- Welcome and Arrow Animations ---- */
 
@@ -69,14 +69,13 @@ header {
 
 .moveA {
   transform: translateY(0px);
-  transition: transform 400ms cubic-bezier(.12,.12,.41,.99);
+  transition: transform 400ms cubic-bezier(0.12, 0.12, 0.41, 0.99);
 }
 
 .moveB {
   transform: translateY(-80px);
-  transition: transform 400ms cubic-bezier(.76,.01,.91,.89);
+  transition: transform 400ms cubic-bezier(0.76, 0.01, 0.91, 0.89);
 }
-
 
 a.arlink {
   width: 90px;
@@ -115,18 +114,27 @@ a.arlink {
 }
 
 @keyframes arrow {
-  0% { opacity: 0; }
-  60% { opacity: 1; }
-  100% { opacity: 0; }
+  0% {
+    opacity: 0;
+  }
+  60% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
 }
 
 @keyframes arrbox {
-  0% { transform: translateY(-50px); }
-  100% { transform: translateY(70px); }
+  0% {
+    transform: translateY(-50px);
+  }
+  100% {
+    transform: translateY(70px);
+  }
 }
 
 /* ---- Welcome Arrow End ---- */
-
 
 /* ---- Navbar Start ---- */
 
@@ -135,13 +143,23 @@ nav {
   height: auto;
   background-color: var(--main-blue);
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
   position: -webkit-sticky;
   position: sticky;
   top: 0;
   z-index: 50;
   font-family: var(--fontmain);
+}
+
+.navWidth {
+  width: 100%;
+  height: auto;
+  background-color: var(--main-blue);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: var(--maxWidth);
 }
 
 .logo {
@@ -187,7 +205,7 @@ nav {
 }
 
 @media only screen and (max-width: 900px) {
-  nav {
+  .navWidth {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -214,14 +232,16 @@ nav {
     /* border: 2px dashed red; */
   }
 
-  .a, .b, .c {
+  .a,
+  .b,
+  .c {
     position: absolute;
     width: 30px;
     height: 3px;
     background-color: var(--main-offwhite);
     border-radius: 1px;
     transition: transform var(--gen-anim-speed) ease,
-                opacity var(--gen-anim-speed) ease;
+      opacity var(--gen-anim-speed) ease;
   }
 
   .a {
@@ -276,7 +296,6 @@ nav {
 }
 
 /* ---- Navbar End ---- */
-
 
 /* ---- About Start ---- */
 
@@ -334,7 +353,6 @@ nav {
 
 /* ---- About End ---- */
 
-
 /* ---- Skills Start ---- */
 
 #skills {
@@ -349,7 +367,7 @@ nav {
 }
 
 #skills h2 {
-  margin: 0 0 .2rem 0;
+  margin: 0 0 0.2rem 0;
   text-align: center;
   display: block;
   width: 100%;
@@ -376,13 +394,13 @@ nav {
   justify-content: center;
   align-items: center;
   overflow: hidden;
-  box-shadow: 0px 0px 0px 1px rgba(0, 0, 0, .0);
+  box-shadow: 0px 0px 0px 1px rgba(0, 0, 0, 0);
   transition-duration: var(--card-dura);
   transition-property: transform box-shadow;
 }
 
 .lang:hover {
-  box-shadow: -3px 3px 14px 1px rgba(0, 0, 0, .3);
+  box-shadow: -3px 3px 14px 1px rgba(0, 0, 0, 0.3);
 }
 
 .lang-odds:hover {
@@ -393,20 +411,36 @@ nav {
   transform: scale(1.25) rotate(-3deg);
 }
 
-.fa-html5, .fa-css3-alt, .fa-js, .fa-react, .fa-php, .fa-python {
+.fa-html5,
+.fa-css3-alt,
+.fa-js,
+.fa-react,
+.fa-php,
+.fa-python {
   color: var(--black);
   transition-duration: var(--card-dura);
   transition-property: color;
 }
 
-
 /* Programming languages hovers */
-.lang:hover .fa-html5 { color: #F04736; }
-.lang:hover .fa-css3-alt { color: #2945F5; }
-.lang:hover .fa-js {  color: #F5C702; }
-.lang:hover .fa-react {  color: #88E5EB; }
-.lang:hover .fa-php {  color: #837EEB; }
-.lang:hover .fa-python {  color: #2945F5; }
+.lang:hover .fa-html5 {
+  color: #f04736;
+}
+.lang:hover .fa-css3-alt {
+  color: #2945f5;
+}
+.lang:hover .fa-js {
+  color: #f5c702;
+}
+.lang:hover .fa-react {
+  color: #88e5eb;
+}
+.lang:hover .fa-php {
+  color: #837eeb;
+}
+.lang:hover .fa-python {
+  color: #2945f5;
+}
 
 .fab {
   position: relative;
@@ -416,24 +450,24 @@ nav {
 }
 
 .lang:hover .fab {
-  transform: translateY(-12px)  scale(1);
+  transform: translateY(-12px) scale(1);
 }
 
 span {
   width: 0%;
   height: 2px;
   border-radius: 1px;
-  background-color: rgba(0,0,0,0);
+  background-color: rgba(0, 0, 0, 0);
   position: relative;
   top: 20px;
-  transition-duration:  var(--card-dura);
-  transition-property: top width background-color ;
+  transition-duration: var(--card-dura);
+  transition-property: top width background-color;
 }
 
 .lang:hover span {
   top: 0px;
   width: 55%;
-  background-color: rgba(0,0,0,.06);
+  background-color: rgba(0, 0, 0, 0.06);
 }
 
 .lang p {
@@ -442,7 +476,7 @@ span {
   top: 11px;
   transform: translateY(45px);
   opacity: 0;
-  transition-duration:  var(--card-dura);
+  transition-duration: var(--card-dura);
   transition-property: transform opacity;
   font-family: var(--fontmain);
 }
@@ -454,12 +488,12 @@ span {
 
 /* ---- Skills End ---- */
 
-
 /* ---- Gallery Start ---- */
 
 #gallery {
   padding: var(--pad-top-bot) 0;
   width: 100%;
+
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -515,6 +549,7 @@ span {
   flex-direction: row;
   flex-wrap: wrap;
   width: 80vw;
+  max-width: var(--maxWidth);
   padding: 10px;
   margin: 10px 0;
   background-color: var(--main-white);
@@ -554,7 +589,7 @@ img.thumb {
   color: white;
   z-index: 9;
   opacity: 0;
-  transition: transform 3s linear, opacity .3s linear;
+  transition: transform 3s linear, opacity 0.3s linear;
 }
 
 .imageCon:hover .thumb {
@@ -573,9 +608,7 @@ a.gallHide {
   display: none;
 }
 
-
 /* ---- Gallery End ---- */
-
 
 /* ---- HTML Canvas Letter Start ---- */
 
@@ -596,7 +629,6 @@ a.gallHide {
   background-color: var(--main-offwhite);
   display: flex;
   flex-direction: column;
-
 }
 
 #canvasContainer {
@@ -643,7 +675,6 @@ a.gallHide {
   height: 25px;
 }
 
-
 #butSquare {
   position: absolute;
   border: 4px solid #ebf4ff;
@@ -685,10 +716,7 @@ a.gallHide {
   color: var(--black);
 }
 
-
-
 /* ---- HTML Canvas End ---- */
-
 
 /* ---- Quote start ---- */
 
@@ -705,7 +733,7 @@ a.gallHide {
 
 .quoteTxt {
   font-size: 50px;
-  font-family: 'Yellowtail', cursive;
+  font-family: "Yellowtail", cursive;
   opacity: 0%;
   transform: translateX(-300px);
   transition: transform 1.5s var(--anim-slides), opacity 1.5s var(--anim-slides);
@@ -715,11 +743,11 @@ a.gallHide {
   position: relative;
   left: 280px;
   font-size: 40px;
-  font-family: 'Yellowtail', cursive;
+  font-family: "Yellowtail", cursive;
   opacity: 0%;
   transform: translateX(300px);
   transition: transform 1.5s var(--anim-slides), opacity 1.5s var(--anim-slides);
-  transition-delay: .2s;
+  transition-delay: 0.2s;
   padding-top: 10px;
 }
 
@@ -734,8 +762,7 @@ a.gallHide {
 }
 
 @media only screen and (max-width: 790px) {
-
-  .quoteTxt{
+  .quoteTxt {
     font-size: 35px;
   }
 
@@ -743,11 +770,9 @@ a.gallHide {
     left: 0px;
     font-size: 25px;
   }
-  
 }
 
 /* ---- Quote End ---- */
-
 
 /* ---- Waves Start - footer---- */
 
@@ -770,14 +795,13 @@ svg {
   left: 0;
 }
 
-
 .copy {
   display: flex;
   align-items: center;
   justify-content: center;
   height: 50px;
   color: rgba(255, 255, 255, 0.8);
-  font-size: .8em;
+  font-size: 0.8em;
   text-align: center;
   background-color: var(--main-blue);
   font-family: var(--fontmain);
