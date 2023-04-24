@@ -383,6 +383,11 @@ nav {
   align-items: center;
 }
 
+.skill-links {
+  text-decoration: none;
+  color: inherit;
+}
+
 .lang {
   width: 120px;
   height: 120px;
