@@ -1,0 +1,159 @@
+/* ---- Navbar Start ---- */
+
+nav {
+  width: 100%;
+  height: auto;
+  background-color: var(--main-blue);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  z-index: 50;
+  font-family: var(--fontmain);
+}
+
+.navWidth {
+  width: 100%;
+  height: auto;
+  background-color: var(--main-blue);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: var(--maxWidth);
+}
+
+.logo {
+  margin-left: 10px;
+  font-weight: 900;
+  height: 0px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.logo a {
+  text-decoration: none;
+  color: var(--main-offwhite);
+}
+
+.nav-ul {
+  display: flex;
+  list-style: none;
+  height: 100%;
+}
+
+.nav-ul .nav-li {
+  height: 100%;
+}
+
+.nav-ul .nav-li a {
+  text-decoration: none;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  font-weight: 600;
+  color: var(--main-offwhite);
+}
+
+.nav-ul .nav-li a {
+  padding: 0 15px;
+}
+
+.nav-ul .nav-li a:hover {
+  color: var(--main-white);
+  background-color: var(--main-rollOver);
+}
+
+@media only screen and (max-width: 900px) {
+  .navWidth {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .small-menu {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+  }
+
+  .ham-con {
+    width: 50px;
+    height: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    overflow-x: hidden;
+  }
+
+  .a,
+  .b,
+  .c {
+    position: absolute;
+    width: 30px;
+    height: 3px;
+    background-color: var(--main-offwhite);
+    border-radius: 1px;
+    transition: transform var(--gen-anim-speed) ease,
+      opacity var(--gen-anim-speed) ease;
+  }
+
+  .a {
+    transform: translateY(-8px);
+  }
+
+  .b {
+    opacity: 100;
+  }
+
+  .c {
+    transform: translateY(8px);
+  }
+
+  .a.open {
+    transform: translateY(0px) rotate(45deg);
+  }
+
+  .b.open {
+    transform: translateX(20px);
+    opacity: 0;
+  }
+
+  .c.open {
+    transform: translateY(0px) rotate(-45deg);
+  }
+
+  .nav-ul {
+    display: none;
+  }
+
+  .nav-ul.open {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    transform: translateY(0px);
+  }
+
+  .nav-li {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 180px;
+    height: 200px;
+  }
+
+  .nav-ul .nav-li {
+    height: 50px;
+  }
+}
+
+/* ---- Navbar End ---- */

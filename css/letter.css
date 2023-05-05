@@ -1,0 +1,107 @@
+/* ---- HTML Canvas Letter Start ---- */
+
+#letterMain h2 {
+  margin: 0 0 10px 0;
+  text-align: center;
+  display: block;
+  width: 100%;
+  font-family: var(--fontmain);
+}
+
+#letterMain {
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--main-offwhite);
+  display: flex;
+  flex-direction: column;
+}
+
+#canvasContainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#myCanvas {
+  border-radius: 15px;
+}
+
+.buttonCon {
+  margin-top: 20px;
+  width: 250px;
+  height: 60px;
+  background-color: white;
+  border-radius: 5px;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+#partButton {
+  width: 50px;
+  height: 45px;
+  background-color: var(--main-blue);
+  border: none;
+  border-radius: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#partButton:hover {
+  background-color: var(--main-rollOver);
+}
+
+#butCirc {
+  position: absolute;
+  background-color: #ebf4ff;
+  border-radius: 100%;
+  width: 25px;
+  height: 25px;
+}
+
+#butSquare {
+  position: absolute;
+  border: 4px solid #ebf4ff;
+  border-radius: 1px;
+  width: 25px;
+  height: 25px;
+}
+
+#rangeCon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#sizeSlider {
+  transform: translateY(10px);
+}
+
+#rangeIcons {
+  position: absolute;
+  width: 55px;
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  transform: translateY(-13.5px);
+}
+
+#smA {
+  display: inline;
+  font-size: 24px;
+  font-family: var(--fontmain);
+  color: var(--black);
+}
+
+#lgA {
+  display: inline;
+  font-size: 35px;
+  font-family: var(--fontmain);
+  color: var(--black);
+}
+
+/* ---- HTML Canvas End ---- */

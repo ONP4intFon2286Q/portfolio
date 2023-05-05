@@ -1,0 +1,173 @@
+/* ---- Skills section start ---- */
+
+#skills {
+  padding: var(--pad-top-bot) 0;
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--main-yellow);
+}
+
+#skills h2 {
+  margin: 0 0 0.2rem 0;
+  text-align: center;
+  display: block;
+  width: 100%;
+  font-family: var(--fontmain);
+}
+
+.soft-con {
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.skill-links {
+  text-decoration: none;
+  color: inherit;
+}
+
+.lang {
+  width: 120px;
+  height: 120px;
+  border-radius: 5px;
+  background-color: white;
+  margin: 10px 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  box-shadow: 0px 0px 0px 1px rgba(0, 0, 0, 0);
+  transition-duration: var(--card-dura);
+  transition-property: transform box-shadow;
+}
+
+.lang:hover {
+  box-shadow: -3px 3px 14px 1px rgba(0, 0, 0, 0.3);
+}
+
+.lang-odds:hover {
+  transform: scale(1.25) rotate(3deg);
+}
+
+.lang-evens:hover {
+  transform: scale(1.25) rotate(-3deg);
+}
+
+.fa-html5,
+.fa-css3-alt,
+.fa-js,
+.fa-react,
+.fa-php,
+.fa-python {
+  color: var(--black);
+  transition-duration: var(--card-dura);
+  transition-property: color;
+}
+
+/* Programming icons color hovers */
+.lang:hover .fa-html5 {
+  color: #f04736;
+}
+.lang:hover .fa-css3-alt {
+  color: #2945f5;
+}
+.lang:hover .fa-js {
+  color: #f5c702;
+}
+.lang:hover .fa-react {
+  color: #88e5eb;
+}
+.lang:hover .fa-php {
+  color: #837eeb;
+}
+.lang:hover .fa-python {
+  color: #2945f5;
+}
+
+.fab {
+  position: relative;
+  transform: translateY(11px) scale(1.4);
+  transition-duration: var(--card-dura);
+  transition-property: transform;
+}
+
+.lang:hover .fab {
+  transform: translateY(-12px) scale(1);
+}
+
+span {
+  position: relative;
+  width: 0%;
+  height: 2px;
+  border-radius: 1px;
+  background-color: rgba(0, 0, 0, 0);
+  transform: translateY(20px);
+  transition-duration: var(--card-dura);
+  transition-property: transform, width, background-color;
+}
+
+.lang:hover span {
+  transform: translateY(-11px);
+  width: 55%;
+  background-color: rgba(0, 0, 0, 0.06);
+}
+
+.lang p {
+  font-size: 0.95rem;
+  text-align: center;
+  position: relative;
+  top: -2px;
+  transform: translateY(45px);
+  opacity: 0;
+  transition-duration: var(--card-dura);
+  transition-property: transform opacity;
+  font-family: var(--fontmain);
+}
+
+.lang:hover p {
+  transform: translateY(-5px);
+  opacity: 1;
+}
+
+.skills-links-con {
+  display: flex;
+  position: absolute;
+  transform: translateY(90px);
+  opacity: 0;
+  transition-duration: var(--card-dura);
+  transition-property: transform opacity;
+  font-family: var(--fontmain);
+}
+
+.lang:hover .skills-links-con {
+  transform: translateY(42px);
+  opacity: 1;
+}
+
+.sites-link {
+  font-size: 0.8rem;
+  display: inline-block;
+  text-decoration: none;
+  color: inherit;
+  background-color: #e9ecf1;
+  width: 45px;
+  height: 19px;
+  margin: 1px 3px;
+  border-radius: 3px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: 350ms background-color ease;
+}
+
+.sites-link:hover {
+  background-color: #c4c6d3;
+}
