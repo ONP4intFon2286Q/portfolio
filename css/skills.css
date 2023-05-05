@@ -115,7 +115,7 @@ span {
 }
 
 .lang:hover span {
-  transform: translateY(-11px);
+  transform: translateY(-9.5px);
   width: 55%;
   background-color: rgba(0, 0, 0, 0.06);
 }

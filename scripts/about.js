@@ -24,14 +24,3 @@ const observer = new IntersectionObserver(handleIntersection, options);
 aboutCon.forEach((e) => {
   observer.observe(e);
 });
-
-// About section end
-
-// Skills
-let langboxes = document.querySelectorAll(".lang");
-
-for (let i = 0; i < langboxes.length; i++) {
-  i % 2 == 0
-    ? langboxes[i].classList.add("lang-evens")
-    : langboxes[i].classList.add("lang-odds");
-}
