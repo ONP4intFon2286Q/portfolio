@@ -62,7 +62,7 @@
   transform: scale(1.25) rotate(-3deg);
 }
 
-svg {
+.lang > svg {
   position: absolute;
   fill: var(--black);
   transform: translateY(0px) scale(0.8);
