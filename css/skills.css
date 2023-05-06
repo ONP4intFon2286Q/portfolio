@@ -39,6 +39,7 @@
   border-radius: 5px;
   background-color: white;
   margin: 10px 10px;
+  position: relative;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -61,71 +62,58 @@
   transform: scale(1.25) rotate(-3deg);
 }
 
-.fa-html5,
-.fa-css3-alt,
-.fa-js,
-.fa-react,
-.fa-php,
-.fa-python {
-  color: var(--black);
+svg {
+  position: absolute;
+  fill: var(--black);
+  transform: translateY(0px) scale(0.8);
   transition-duration: var(--card-dura);
-  transition-property: color;
+  transition-property: transform, fill;
+}
+
+.lang:hover svg {
+  transform: translateY(-25px) scale(0.5);
 }
 
 /* Programming icons color hovers */
-.lang:hover .fa-html5 {
-  color: #f04736;
+.lang:hover.HTML > svg {
+  fill: #f04736;
 }
-.lang:hover .fa-css3-alt {
-  color: #2945f5;
+.lang:hover.CSS > svg {
+  fill: #2945f5;
 }
-.lang:hover .fa-js {
-  color: #f5c702;
+.lang:hover.JavaScript > svg {
+  fill: #f5c702;
 }
-.lang:hover .fa-react {
-  color: #88e5eb;
+.lang:hover.React > svg {
+  fill: #88e5eb;
 }
-.lang:hover .fa-php {
-  color: #837eeb;
-}
-.lang:hover .fa-python {
-  color: #2945f5;
-}
-
-.fab {
-  position: relative;
-  transform: translateY(11px) scale(1.4);
-  transition-duration: var(--card-dura);
-  transition-property: transform;
-}
-
-.lang:hover .fab {
-  transform: translateY(-12px) scale(1);
+.lang:hover.Python > svg {
+  fill: #2945f5;
 }
 
 span {
-  position: relative;
+  position: absolute;
   width: 0%;
   height: 2px;
   border-radius: 1px;
   background-color: rgba(0, 0, 0, 0);
-  transform: translateY(20px);
+  transform: translateY(80px);
   transition-duration: var(--card-dura);
   transition-property: transform, width, background-color;
 }
 
 .lang:hover span {
-  transform: translateY(-9.5px);
+  transform: translateY(8px);
   width: 55%;
   background-color: rgba(0, 0, 0, 0.06);
 }
 
 .lang p {
-  font-size: 0.95rem;
+  position: absolute;
+  font-size: 0.92rem;
   text-align: center;
-  position: relative;
   top: -2px;
-  transform: translateY(45px);
+  transform: translateY(120px);
   opacity: 0;
   transition-duration: var(--card-dura);
   transition-property: transform opacity;
@@ -133,7 +121,7 @@ span {
 }
 
 .lang:hover p {
-  transform: translateY(-5px);
+  transform: translateY(73px);
   opacity: 1;
 }
 
