@@ -12,7 +12,6 @@
   background-color: var(--main-white);
   overflow: hidden;
   font-family: var(--fontmain);
-  /* border: 2px dashed red; */
 }
 
 .about-img {
@@ -28,10 +27,6 @@
   opacity: 0%;
   transition: transform 1.5s var(--anim-slides), opacity 1.5s var(--anim-slides);
   margin: 10px 20px 10px 0;
-}
-
-#about h2 {
-  margin-bottom: 4px;
 }
 
 .about-txt {

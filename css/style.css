@@ -5,6 +5,7 @@
   padding: 0;
   box-sizing: border-box;
   scroll-behavior: smooth;
+  font-family: var(--fontmain);
 }
 
 :root {
@@ -23,10 +24,10 @@
 }
 
 .underLines {
-  width: 90px;
-  height: 2px;
+  width: 125px;
+  height: 3px;
   background-color: rgba(0, 0, 0, 0.1);
   display: block;
   border-radius: 1px;
-  margin: 0 0 1rem 0;
+  margin: 12px 0;
 }
