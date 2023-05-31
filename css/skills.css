@@ -86,8 +86,8 @@
 .lang:hover.React > svg {
   fill: #88e5eb;
 }
-.lang:hover.Python > svg {
-  fill: #2945f5;
+.lang:hover.Node > svg {
+  fill: #31a816;
 }
 
 span {
