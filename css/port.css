@@ -158,8 +158,7 @@
   transform: translateY(130px);
 }
 
-.portLink:hover,
-.portGit:hover {
+.workButtons:hover {
   cursor: pointer;
   background-color: rgba(4, 4, 4, 1);
 }
