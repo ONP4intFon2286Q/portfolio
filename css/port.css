@@ -63,7 +63,7 @@
 }
 
 .portImg.chatapp {
-  transform: scale(0.4) translate(275px, 10px);
+  transform: scale(0.4) translate(275px, 8px);
 }
 
 .gradOverlay {
